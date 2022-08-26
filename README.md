@@ -125,9 +125,18 @@ Used to get up and running quickly | Used to drive drive standards and communica
 
 [Homebrew](https://brew.sh/) installation method is supported for Mac and Linux. Using the Terminal, enter the following commands:
 
+##### x86-64
+
 ```
 brew tap aaroniscode/tap
 brew install eksdemo
+```
+
+##### ARM64 
+
+```
+brew tap aaroniscode/tap
+arch -arm64 brew install eksdemo
 ```
 
 Note: Depending on how you originally installed `eksctl`, you may receive the error: `eksctl is already installed from homebrew/core!`  This is because `eksdemo` uses the official Weaveworks tap `weaveworks/tap` as a dependency. _ONLY IF you receive that error_, run the following commands:
